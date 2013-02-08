@@ -431,7 +431,7 @@ PAGE NAVI STYLES
 
 				&:hover,
 				&:focus {
-					color: #f01d4f;
+					color: $link-hover;
 					text-decoration: underline;
 				}
 			}
@@ -441,7 +441,7 @@ PAGE NAVI STYLES
 		/* current page link */
 		li.bpn-current {
 			padding: 3px 6px;
-			border-bottom: 2px solid darken($link-color, 10%);
+			border-bottom: 2px solid $link-color;
 			position: relative;
 
 			a {

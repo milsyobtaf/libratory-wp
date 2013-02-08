@@ -42,7 +42,9 @@ NAVIGATION STYLES
 .nav {
 	background: #eee;
 	border: 0;
-
+	ul {
+		margin: .2em 0;
+	}
 	li {
 		float: left;
 		position: relative;

@@ -29,3 +29,14 @@
 2013-02-08 16:52:14 overwrite ../css/style.css 
 2013-02-08 16:52:30 identical ../css/style.css 
 2013-02-08 16:53:11 overwrite ../css/style.css 
+2013-02-08 16:56:52     error style.scss (Line 434 of _base.scss: Invalid CSS after "					color: ": expected expression (e.g. 1px, bold), was "#link-hover;")
+2013-02-08 16:56:52 overwrite ../css/style.css 
+2013-02-08 16:57:07     error style.scss (Line 444 of _base.scss: wrong number of arguments (1 for 2) for `darken')
+2013-02-08 16:57:08 overwrite ../css/style.css 
+2013-02-08 16:57:11     error style.scss (Line 444 of _base.scss: wrong number of arguments (1 for 2) for `darken')
+2013-02-08 16:57:11 identical ../css/style.css 
+2013-02-08 16:57:29 overwrite ../css/style.css 
+2013-02-08 17:09:39 overwrite ../css/style.css 
+2013-02-08 17:10:12 overwrite ../css/style.css 
+2013-02-08 17:10:22 overwrite ../css/ie.css 
+2013-02-08 17:10:23 overwrite ../css/style.css 
