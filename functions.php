@@ -45,6 +45,30 @@ require_once('library/admin.php'); // this comes turned off by default
 */
 // require_once('library/translation/translation.php'); // this comes turned off by default
 
+/************* HEADER IMAGE *************************/
+// header image define
+if (!defined('NO_HEADER_TEXT')) { define('NO_HEADER_TEXT', true ); } // no header text
+if (!defined('HEADER_TEXTCOLOR')) { define('HEADER_TEXTCOLOR', 'ffffff'); } // header text color
+if (!defined('HEADER_IMAGE')) { define('HEADER_IMAGE', get_template_directory_uri() . '/library/images/default_header.jpg'); } // default header image
+if (!defined('HEADER_IMAGE_WIDTH')) { define('HEADER_IMAGE_WIDTH', 960); } // the width of the logo
+if (!defined('HEADER_IMAGE_HEIGHT')) { define('HEADER_IMAGE_HEIGHT', 150); } // the height of the logo
+
+// gets included in the site header
+function header_style() { ?>
+    <style type="text/css"> header[role=banner] { background: url(<?php header_image(); ?>); } </style><?php
+}
+// gets included in the admin header
+function admin_header_style() { ?>
+    <style type="text/css">
+    #headimg {
+        width: <?php echo HEADER_IMAGE_WIDTH; ?>px;
+        height: <?php echo HEADER_IMAGE_HEIGHT; ?>px;
+    }
+    </style>
+<?php }
+
+add_custom_image_header('header_style', 'admin_header_style');
+
 /************* THUMBNAIL SIZE OPTIONS *************/
 
 // Thumbnail sizes

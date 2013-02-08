@@ -1,0 +1,31 @@
+2013-02-07 16:50:17 overwrite ../css/login.css 
+2013-02-07 16:51:17 overwrite ../css/login.css 
+2013-02-07 17:45:28 overwrite ../css/style.css 
+2013-02-08 15:48:17 overwrite ../css/style.css 
+2013-02-08 15:50:55 overwrite ../css/style.css 
+2013-02-08 15:51:42 overwrite ../css/style.css 
+2013-02-08 15:51:46 identical ../css/style.css 
+2013-02-08 15:55:04 overwrite ../css/style.css 
+2013-02-08 15:55:32 overwrite ../css/style.css 
+2013-02-08 15:55:41 identical ../css/style.css 
+2013-02-08 15:56:07 overwrite ../css/style.css 
+2013-02-08 15:56:56     error style.scss (Line 163 of _base.scss: Invalid CSS after "	}": expected selector or at-rule, was "}")
+2013-02-08 15:56:56 overwrite ../css/style.css 
+2013-02-08 15:56:58     error style.scss (Line 163 of _base.scss: Invalid CSS after "	}": expected selector or at-rule, was "}")
+2013-02-08 15:56:58 identical ../css/style.css 
+2013-02-08 15:57:17 overwrite ../css/style.css 
+2013-02-08 15:59:06 overwrite ../css/ie.css 
+2013-02-08 15:59:07 overwrite ../css/style.css 
+2013-02-08 16:04:17 overwrite ../css/style.css 
+2013-02-08 16:05:32 overwrite ../css/style.css 
+2013-02-08 16:16:05 overwrite ../css/style.css 
+2013-02-08 16:22:56 overwrite ../css/style.css 
+2013-02-08 16:23:20 identical ../css/style.css 
+2013-02-08 16:23:58 overwrite ../css/style.css 
+2013-02-08 16:26:48 overwrite ../css/style.css 
+2013-02-08 16:26:50 identical ../css/style.css 
+2013-02-08 16:51:45     error style.scss (Line 444 of _base.scss: 20% is not a color for `darken')
+2013-02-08 16:51:45 overwrite ../css/style.css 
+2013-02-08 16:52:14 overwrite ../css/style.css 
+2013-02-08 16:52:30 identical ../css/style.css 
+2013-02-08 16:53:11 overwrite ../css/style.css 

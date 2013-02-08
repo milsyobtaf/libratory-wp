@@ -116,13 +116,13 @@ add_filter('login_headertitle', 'bones_login_title');
 /*
 I don't really recommend editing the admin too much
 as things may get funky if WordPress updates. Here
-are a few funtions which you can choose to use if
+are a few functions which you can choose to use if
 you like.
 */
 
 // Custom Backend Footer
 function bones_custom_admin_footer() {
-	_e('<span id="footer-thankyou">Developed by <a href="http://yoursite.com" target="_blank">Your Site Name</a></span>. Built using <a href="http://themble.com/bones" target="_blank">Bones</a>.', 'bonestheme');
+	_e('<span id="footer-thankyou">Developed by <a href="' . get_home_url() . '" rel="nofollow">' . get_bloginfo() . '</a></span>. Built using <a href="http://themble.com/bones" target="_blank">Bones</a>.', 'bonestheme');
 }
 
 // adding it to the admin area

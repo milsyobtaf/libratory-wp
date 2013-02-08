@@ -154,6 +154,19 @@ HEADER SYTLES
 
 	#logo {}
 
+p#logo.h1 {
+		margin: 0;
+		font-size: 3em;
+		font-family: Impact, sans-serif;
+		text-transform: uppercase;
+	}
+p#description.h3 {
+		margin: 0;
+		font-size: 1.5em;
+		font-family: Impact, sans-serif;
+		font-style: italic;
+		text-transform: uppercase;
+	}
 /*********************
 NAVIGATION STYLES
 *********************/
@@ -167,8 +180,7 @@ and more scalable.
 */
 
 .nav {
-	border: 1px solid #ccc;
-	border-bottom: 0;
+	border: none;
 
 	li {
 
@@ -243,7 +255,7 @@ POSTS & CONTENT STYLES
 *********************/
 
 #content {
-	margin-top: 2.2em;
+	margin-top: 0;
 }
 
 		.hentry {
@@ -265,7 +277,9 @@ POSTS & CONTENT STYLES
 
 		/* want to style individual post classes? Booya! */
 		.post-id {}         /* post by id (i.e. post-3) */
-		.post {}            /* general post style */
+		.post {/* general post style */
+			border-bottom: 1px solid #cccccc;
+			}
 		.page {}            /* general article on a page style */
 		.attachment {}      /* general style on an attatchment */
 		.sticky {}          /* sticky post style */
@@ -427,7 +441,7 @@ PAGE NAVI STYLES
 		/* current page link */
 		li.bpn-current {
 			padding: 3px 6px;
-			border-bottom: 2px solid #f01d4f;
+			border-bottom: 2px solid darken($link-color, 10%);
 			position: relative;
 
 			a {
