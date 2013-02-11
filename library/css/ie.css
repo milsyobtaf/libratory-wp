@@ -482,7 +482,7 @@ NAVIGATION STYLES
 *********************/
 /* line 42, ../scss/_768up.scss */
 .nav {
-  background: #eee;
+  background: none;
   border: 0;
   /* end .menu ul li */
   /* highlight current page */
@@ -496,24 +496,30 @@ NAVIGATION STYLES
 .nav li {
   float: left;
   position: relative;
+  border-left: 1px solid #cccccc;
   /*
   plan your menus and drop-downs wisely.
   */
   /* showing sub-menus */
 }
-/* line 52, ../scss/_768up.scss */
+/* line 54, ../scss/_768up.scss */
 .nav li a {
   border-bottom: 0;
   /*
   you can use hover styles here even though this size
   has the possibility of being a mobile device.
   */
+  background-color: #ededed;
 }
-/* line 59, ../scss/_768up.scss */
+/* line 61, ../scss/_768up.scss */
 .nav li a:hover, .nav li a:focus {
-  background-color: #dedede;
+  background-color: #ffffff;
 }
-/* line 72, ../scss/_768up.scss */
+/* line 67, ../scss/_768up.scss */
+.nav li:first-child {
+  border-left: none;
+}
+/* line 76, ../scss/_768up.scss */
 .nav li ul.sub-menu,
 .nav li ul.children {
   width: 200px;
@@ -524,7 +530,7 @@ NAVIGATION STYLES
   z-index: 8999;
   /* highlight sub-menu current page */
 }
-/* line 80, ../scss/_768up.scss */
+/* line 84, ../scss/_768up.scss */
 .nav li ul.sub-menu li,
 .nav li ul.children li {
   /*
@@ -533,7 +539,7 @@ NAVIGATION STYLES
   for usability. k, bai.
   */
 }
-/* line 82, ../scss/_768up.scss */
+/* line 86, ../scss/_768up.scss */
 .nav li ul.sub-menu li a,
 .nav li ul.children li a {
   padding-left: 10px;
@@ -542,43 +548,49 @@ NAVIGATION STYLES
   width: 180px;
   border-bottom: 1px solid #cccccc;
 }
-/* line 99, ../scss/_768up.scss */
+/* line 103, ../scss/_768up.scss */
 .nav li ul.sub-menu li:last-child a,
 .nav li ul.children li:last-child a {
   border-bottom: 0;
 }
-/* line 121, ../scss/_768up.scss */
+/* line 125, ../scss/_768up.scss */
 .nav li:hover ul {
   top: auto;
   display: block;
+}
+/* line 136, ../scss/_768up.scss */
+.nav li.current-menu-item a,
+.nav li.current_page_item a,
+.nav li.current-page-ancestor a {
+  background-color: #ffffff;
 }
 
 /* end .nav */
 /*********************
 SIDEBARS & ASIDES
 *********************/
-/* line 141, ../scss/_768up.scss */
+/* line 147, ../scss/_768up.scss */
 .sidebar {
   margin-top: 2.2em;
 }
 
-/* line 145, ../scss/_768up.scss */
+/* line 151, ../scss/_768up.scss */
 .widgettitle {
   border-bottom: 2px solid #444444;
   margin-bottom: 0.75em;
 }
 
-/* line 150, ../scss/_768up.scss */
+/* line 156, ../scss/_768up.scss */
 .widget {
   padding: 0 10px;
   margin: 2.2em 0;
 }
-/* line 155, ../scss/_768up.scss */
+/* line 161, ../scss/_768up.scss */
 .widget ul li {
   margin-bottom: 0.75em;
   /* deep nesting */
 }
-/* line 163, ../scss/_768up.scss */
+/* line 169, ../scss/_768up.scss */
 .widget ul li ul {
   margin-top: 0.75em;
   padding-left: 1em;
@@ -603,7 +615,7 @@ you'll probably need to do quite a bit
 of overriding here if you styled them for
 mobile. Make sure to double check these!
 */
-/* line 271, ../scss/_768up.scss */
+/* line 277, ../scss/_768up.scss */
 .footer-links ul li {
   /*
   be careful with the depth of your menus.

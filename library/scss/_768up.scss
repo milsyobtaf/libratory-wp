@@ -40,7 +40,7 @@ NAVIGATION STYLES
 *********************/
 
 .nav {
-	background: #eee;
+	background: none;
 	border: 0;
 	ul {
 		margin: .2em 0;
@@ -48,21 +48,25 @@ NAVIGATION STYLES
 	li {
 		float: left;
 		position: relative;
+		border-left: 1px solid #ccc;
+
 
 		a {
 			border-bottom: 0;
-
 			/*
 			you can use hover styles here even though this size
 			has the possibility of being a mobile device.
 			*/
+			background-color: #ededed;
 			&:hover, &:focus {
-				background-color: #dedede;
+				background-color: #ffffff;
 
 			}
 		}
 
-		&:first-child {}
+		&:first-child {
+			border-left: none;
+		}
 		&:last-child {}
 
 		/*
@@ -129,7 +133,9 @@ NAVIGATION STYLES
 	li.current-menu-item,
 	li.current_page_item,
 	li.current-page-ancestor {
-		a {}
+		a {
+			background-color: #ffffff;
+		}
 	}  /* end current highlighters */
 
 } /* end .nav */

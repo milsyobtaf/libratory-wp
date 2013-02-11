@@ -150,22 +150,28 @@ h5, .h5 {
 HEADER SYTLES
 *********************/
 
-.header {}
+.header {
+	background-color: #e0f2f1;
+	img {
+		height: 100%;
+		width: 100%;
+	}
+}
 
 	#logo {}
 
 p#logo.h1 {
-		margin: 0;
-		font-size: 3em;
-		font-family: Impact, sans-serif;
-		text-transform: uppercase;
+	// margin: 0;
+	// font-size: 3em;
+	// font-family: Impact, sans-serif;
+	// text-transform: uppercase;
 	}
 p#description.h3 {
-		margin: 0;
-		font-size: 1.5em;
-		font-family: Impact, sans-serif;
-		font-style: italic;
-		text-transform: uppercase;
+	// margin: 0;
+	// font-size: 1.5em;
+	// font-family: Impact, sans-serif;
+	// font-style: italic;
+	// text-transform: uppercase;
 	}
 /*********************
 NAVIGATION STYLES
@@ -181,14 +187,16 @@ and more scalable.
 
 .nav {
 	border: none;
-
+	ul {
+		margin-top: 0;
+	}
 	li {
 
 		a {
 			display: block;
 			text-decoration: none;
 			padding: 10px 10px;
-			background-color: #eee;
+			background-color: #ffffff;
 			border-bottom: 1px solid #ccc;
 
 			/*
@@ -793,12 +801,15 @@ COMMENT FORM STYLES
 SIDEBARS & ASIDES
 *********************/
 
-.sidebar {}
+.sidebar {
+}
 
 	.widgettitle {}
 
 	.widget {
-
+		.widget_search {
+			margin: 0 0 2.2em;
+		}
 		ul {
 
 			li {
@@ -818,12 +829,19 @@ SIDEBARS & ASIDES
 
 	}
 
+.widget_search {
+	label {
+		display: none;
+	}
+}
+
 /*********************
 FOOTER STYLES
 *********************/
 
 .footer {
 	clear: both;
+	background-color: #e0f2f1;
 }
 
 	/*
