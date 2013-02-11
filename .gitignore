@@ -9,4 +9,6 @@ Bones.esproj/Project.espressostorage
 
 library/css/*.css
 
+library/scss/fire_app_log.txt
+
 .sass-cache

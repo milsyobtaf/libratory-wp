@@ -3,43 +3,26 @@
 			<div id="content">
 
 				<div id="inner-content" class="wrap clearfix">
-
+asdfsdf
 				    <div id="main" class="eightcol first clearfix" role="main">
 
-					    <?php if (is_category()) { ?>
-						    <h2 class="archive-title h2">
-							    <?php single_cat_title(); ?><span><?php _e("&nbsp;Posts"); ?></span>
-					    	</h2>
-
-					    <?php } elseif (is_tag()) { ?>
-						    <h2 class="archive-title h2">
-							    <?php single_tag_title(); ?><span><?php _e("&nbsp;Posts"); ?></span>
-						    </h2>
-
-					    <?php } elseif (is_author()) {
+					    <?php
 					    	global $post;
 					    	$author_id = $post->post_author;
 					    ?>
 						    <h2 class="archive-title h2">
 
-						    	<span><?php _e("Posts By ", "bonestheme"); ?></span> <?php echo get_the_author_meta('display_name', $author_id); ?>
+						    	<?php echo get_the_author_meta('display_name', $author_id); ?>
 
 						    </h2>
-					    <?php } elseif (is_day()) { ?>
-						    <h2 class="archive-title h2">
-	    						<span><?php _e("Daily Archives:", "bonestheme"); ?></span> <?php the_time('l, F j, Y'); ?>
-						    </h2>
-
-		    			<?php } elseif (is_month()) { ?>
-			    		    <h2 class="archive-title h2">
-				    	    	<span><?php _e("Monthly Archives:", "bonestheme"); ?></span> <?php the_time('F Y'); ?>
-					        </h2>
-
-					    <?php } elseif (is_year()) { ?>
-					        <h2 class="archive-title h2">
-					    	    <span><?php _e("Yearly Archives:", "bonestheme"); ?></span> <?php the_time('Y'); ?>
-					        </h2>
-					    <?php } ?>
+						    <section class="author_info">
+						    	<span class="user_photo">
+						    		<?php
+						    			userphoto($wp_query->get_queried_object(), $default_src = 'wp-content/themes/libratory-wp/library/images/login-logo.png')
+						    		?>
+						    	</span>
+						    	<p class="author_bio">
+						    </section>
 
 					    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
