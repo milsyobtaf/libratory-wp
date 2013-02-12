@@ -47,7 +47,14 @@ style a page via class
 .attachment {}                    /* attatchment page */
 	.attachmentid-1 {}              /* individual attatchment page (i.e. body.attachmentid-763) */
 	.attachment-mime-type {}        /* style mime type pages */
-.author {}                        /* author page */
+.author {}					/* author page */
+.author_info {
+	border-bottom: 1px solid #cccccc;
+
+	.user_info_label {
+		text-align: right;
+	}
+	}
 	.author-nicename {}             /* user nicename (i.e. body.author-samueladams) */
 	.author-paged-1 {}              /* paged author archives (i.e. body.author-paged-4) for page 4 */
 .category {}                      /* category page */

@@ -19,16 +19,16 @@
 						    <?php
 								$curauth = (get_query_var('author_name')) ? get_user_by('slug', get_query_var( 'author_name')) : get_userdata(get_query_var( 'author'));
 						    ?>
-						    	<span class="user_photo twocol first">
+						    	<span class="user_photo fourcol first">
 						    		<?php
 						    			userphoto($wp_query->get_queried_object())
 						    		?>
 						    	</span>
-						    		<ul class="user_info sixcol last">
-						    			<?php $curauth->user_url ? print '<li>' . $curauth->user_url . '</li>' : ''?>
-						    			<?php $curauth->user_email ? print '<li>' . $curauth->user_email . '</li>' : ''?>
+						    		<ul class="user_info eightcol">
+						    			<li><span class="threecol user_info_label">Website:&nbsp;</span><span class="sevencol"><?php $curauth->user_url ? print $curauth->user_url . '</span></li>' : ''?>
+						    			<li><span class="threecol user_info_label">Email:&nbsp;</span><span class="sevencol"><?php $curauth->user_email ? print $curauth->user_email . '</span></li>' : ''?>
 						    		</ul>
-						    	<p class="author_bio">
+						    	<p class="author_bio twelvecol clearfix">
 						    		<?php $curauth->description ? print $curauth->description : ''?>
 						    	</p>
 						    </section>
