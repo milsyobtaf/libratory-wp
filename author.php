@@ -10,11 +10,11 @@ asdfsdf
 					    	global $post;
 					    	$author_id = $post->post_author;
 					    ?>
-						    <h2 class="archive-title h2">
+						    <h1 class="archive-title h2">
 
 						    	<?php echo get_the_author_meta('display_name', $author_id); ?>
 
-						    </h2>
+						    </h1>
 						    <section class="author_info">
 						    	<span class="user_photo">
 						    		<?php
