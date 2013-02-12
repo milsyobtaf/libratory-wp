@@ -48,7 +48,7 @@
 				<div id="inner-header" class="wrap clearfix">
 					<!-- to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> -->
 					<a href="<?php echo home_url(); ?>" rel="nofollow">
-						<img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
+						<?php is_front_page() ? print '<img src="' . get_template_directory_uri() . '/library/images/header-full.png" height="365" width="900" alt="" />' : print '<img src="' . get_template_directory_uri() . '/library/images/header-bottom.png" height="69" width="900" alt="" />' ?>
 					</a>
 
 					<!-- if you'd like to use the site description you can un-comment it below -->
