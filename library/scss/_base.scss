@@ -37,7 +37,10 @@ style a page via class
 	.search-results {}              /* search result page */
 	.search-no-results {}           /* no results search page */
 	.search-paged-1 {}              /* individual paged search (i.e. body.search-paged-3) */
-.error404 {}                      /* 404 page */
+.error404 {
+		margin-left: auto;
+		margin-right: auto;
+	}                      /* 404 page */
 .single {}                        /* single post page */
 	.postid-1 {}                    /* individual post page by id (i.e. body.postid-73) */
 	.single-paged-1 {}              /* individual paged single (i.e. body.single-paged-3) */
@@ -829,10 +832,8 @@ SIDEBARS & ASIDES
 
 	}
 
-.widget_search {
-	label {
-		display: none;
-	}
+label.bones-search-form {
+	display: none;
 }
 
 /*********************
