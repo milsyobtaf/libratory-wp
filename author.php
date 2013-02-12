@@ -18,7 +18,7 @@ asdfsdf
 						    <section class="author_info">
 						    	<span class="user_photo">
 						    		<?php
-						    			userphoto($wp_query->get_queried_object(), $default_src = 'wp-content/themes/libratory-wp/library/images/login-logo.png')
+						    			userphoto($wp_query->get_queried_object())
 						    		?>
 						    	</span>
 						    	<p class="author_bio">
