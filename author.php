@@ -3,7 +3,7 @@
 			<div id="content">
 
 				<div id="inner-content" class="wrap clearfix">
-asdfsdf
+
 				    <div id="main" class="eightcol first clearfix" role="main">
 
 					    <?php
@@ -15,16 +15,28 @@ asdfsdf
 						    	<?php echo get_the_author_meta('display_name', $author_id); ?>
 
 						    </h1>
-						    <section class="author_info">
-						    	<span class="user_photo">
+						    <section class="author_info clearfix">
+						    <?php
+								$curauth = (get_query_var('author_name')) ? get_user_by('slug', get_query_var( 'author_name')) : get_userdata(get_query_var( 'author'));
+						    ?>
+						    	<span class="user_photo twocol first">
 						    		<?php
 						    			userphoto($wp_query->get_queried_object())
 						    		?>
 						    	</span>
+						    		<ul class="user_info sixcol last">
+						    			<?php $curauth->user_url ? print '<li>' . $curauth->user_url . '</li>' : ''?>
+						    			<?php $curauth->user_email ? print '<li>' . $curauth->user_email . '</li>' : ''?>
+						    		</ul>
 						    	<p class="author_bio">
+						    		<?php $curauth->description ? print $curauth->description : ''?>
+						    	</p>
 						    </section>
 
-					    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+						<h2 class="h2">Posts by <?php echo get_the_author_meta('display_name', $author_id); ?></h2>
+
+
+						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 					    <article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
 
