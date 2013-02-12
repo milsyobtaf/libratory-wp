@@ -287,4 +287,29 @@ mobile. Make sure to double check these!
 		}
 	}
 } /* end .footer-links */
+h4.footer-nav {
+	margin: 1em 0 0;
+}
+ul.footer-nav {
+	margin: 0 0 1em;
+}
+.footer-nav {
+	li {
+		float: none;
+		border: none;
+		a {
+			background-color: $tis-green-light;
+			color: $tis-green-dark;
+			padding: .3em;
+		}
+	}
+}
+.utlib-footer {
+	margin: inherit;
+	text-align: inherit;
 
+	.utlib-footer-copyright {
+		margin: .3em 1em 0;
+		text-align: right;
+	}
+}

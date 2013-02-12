@@ -841,7 +841,7 @@ FOOTER STYLES
 
 .footer {
 	clear: both;
-	background-color: #e0f2f1;
+	background-color: $tis-green-light;
 }
 
 	/*
@@ -857,12 +857,39 @@ FOOTER STYLES
 
 		ul {
 
-			li {}
+			li {
+				border: none;
+			}
 
 		}
 
 	} /* end .footer-links */
 
-
 	.copyright {}
 
+.utlib-footer {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+
+	span {
+		display: block;
+	}
+
+	display: block;
+	background-color: #ffffff;
+
+	.utlib-footer-tower {
+		line-height: 0;
+	}
+	.utlib-footer-bottom {
+		background-color: #cc5500;
+	}
+	.utlib-footer-copyright {
+		a {
+			color: #ffffff;
+			text-decoration: none;
+			line-height: 1.5em;
+		}
+	}
+}
