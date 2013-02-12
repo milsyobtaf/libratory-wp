@@ -4,7 +4,7 @@
 
 				<div id="inner-content" class="wrap clearfix">
 
-					<div id="main" class="error404 clearfix" role="main">
+					<div id="main" class="error404 eightcol first clearfix" role="main">
 
 						<article id="post-not-found" class="hentry clearfix">
 
@@ -39,6 +39,8 @@
 						</article> <!-- end article -->
 
 					</div> <!-- end #main -->
+
+				    <?php get_sidebar(); ?>
 
 				</div> <!-- end #inner-content -->
 
