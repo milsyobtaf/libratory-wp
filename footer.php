@@ -14,7 +14,7 @@
 				<div class="utlib-footer twelvecol first last">
 					<span class="utlib-footer-tower twelvecol first last">
 						<a href="http://www.utexas.edu/">
-							<img src="<?php print  get_template_directory_uri() ?>/library/images/utlib-footer-tower.jpg" alt="University of Texas at Austin" width="320" height="36" border="0" />
+							<img src="<?php print  get_template_directory_uri() ?>/library/images/utlib-footer-tower.jpg" alt="University of Texas at Austin" width="320" height="35" border="0" />
 						</a>
 					</span>
 					<span class="utlib-footer-bottom twelvecol first last">
